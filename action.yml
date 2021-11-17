@@ -1,0 +1,24 @@
+name: "Docker build and push - RO"
+description: "This action will help you to build your image and then push it"
+inputs:
+  name-repository: #id of input
+    description: "Name of repository"
+    required: true
+  tag:
+    description: "Tag for repository"
+    required: true
+  docker-username:
+    description: "Put docker user name here"
+    required: true
+  docker-password:
+    description: "Password for docker username"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.name-repository }}
+    - ${{ inputs.tag }}
+    - ${{ inputs.docker-username }}
+    - ${{ inputs.docker-password }}
