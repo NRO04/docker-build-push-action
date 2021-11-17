@@ -19,18 +19,18 @@ REPOSITORY=$1
 
 # Log in DockerHub
 # "--------------------------------"
-    docker login -u USERNAME -p PASSWORD
+  echo $PASSWORD | docker login -u $USERNAME --password-stdin
 # "--------------------------------"
 echo " ++++++ Loggin in Docker ++++++"
 
 # build image
 # "--------------------------------"
-    docker build -t TAG USERNAME/REPOSITORY .
+    docker build -t $USERNAME/$REPOSITORY:$TAG .
 # "--------------------------------"
 echo " ++++++ Building image ++++++"
 
 
 # push the image to dockerhub
 # "--------------------------------"
-    docker push USERNAME/REPOSITORY:TAG 
-# "--------------------------------"
+    docker push $USERNAME/$REPOSITORY:$TAG
+# "--------------------------------""
