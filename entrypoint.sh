@@ -1,11 +1,36 @@
 #!/bin/sh
 
+# ----- PARAMS ----- 
+# echo "REPOSITORY NAME -> $1"
+# echo "TAG -> $2" 
+# echo "USERNAME -> $3"
+# echo "PASSWORD -> $4"
 
-echo "REPOSITORY NAME -> $1"
-echo "TAG -> $2" 
-echo "USERNAME -> $4"
+
+# ------ VAR ------
+
+USERNAME=$3
+PASSWORD=$4
+TAG=$2
+REPOSITORY=$1
+
+# ------ END VAR ------
 
 
-# Build the image
-echo "preview:"
-echo "<< docker build -t $2 $4/$1 >>"
+# Log in DockerHub
+# "--------------------------------"
+    docker login -u USERNAME -p PASSWORD
+# "--------------------------------"
+echo " ++++++ Loggin in Docker ++++++"
+
+# build image
+# "--------------------------------"
+    docker build -t TAG USERNAME/REPOSITORY .
+# "--------------------------------"
+echo " ++++++ Building image ++++++"
+
+
+# push the image to dockerhub
+# "--------------------------------"
+    docker push USERNAME/REPOSITORY:TAG 
+# "--------------------------------"
