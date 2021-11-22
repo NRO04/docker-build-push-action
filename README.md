@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: USING ACTION TO BUILD AND PUST :)
-        uses: NRO04/docker-build-push-action@v1
+        uses: NRO04/docker-build-push-action@v2
         with: #args for action, all of them are required.
           name-repository: ${{ github.repository }} #repository name, specify what the repository will be called on dockerhub.
           tag: v1 #tag for repository

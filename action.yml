@@ -16,9 +16,10 @@ inputs:
 
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: docker://nro04/docker-build-push-action
   args:
-    - ${{ inputs.name-repository }}
-    - ${{ inputs.tag }}
-    - ${{ inputs.docker-username }}
-    - ${{ inputs.docker-password }}
+    - -bph
+    - -n ${{ inputs.name-repository }}
+    - -t ${{ inputs.tag }}
+    - -u ${{ inputs.docker-username }}
+    - -p ${{ inputs.docker-password }}
