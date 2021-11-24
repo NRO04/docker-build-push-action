@@ -5,7 +5,7 @@ This action makes it esasy to build and push your docker image to your repositor
 
 ## Set up 
 
-To execute this action, you'll need to provide the DockerHub credentials, for security, it is recommended to create secrets on your repository.
+To perform this action, you'll need to provide the DockerHub credentials, for security, it is recommended to create secrets on your repository.
 
 Create secrets: 
   - Go to Settings  >  Secrets, then creates secrets for your credentials.
