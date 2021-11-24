@@ -2,8 +2,8 @@
 name: "CI - Docker: Build and Push action "
 description: "This action will help you to build your image and then push it"
 branding:
- icon: "package" # icon name from Feather open source icons pack
- color: "blue"
+ icon: "play-circle" # icon name from Feather open source icons pack
+ color: "green"
  
 author: "RO"
 inputs:
