@@ -16,8 +16,8 @@ inputs:
   docker-username:
     description: "Put docker user name here"
     required: true
-  docker-password:
-    description: "Password for docker username"
+  docker-access-token:
+    description: "Access token to login"
     required: true
 
 runs:
@@ -28,4 +28,4 @@ runs:
     - -n ${{ inputs.name-repository }}
     - -t ${{ inputs.tag }}
     - -u ${{ inputs.docker-username }}
-    - -p ${{ inputs.docker-password }}
+    - -p ${{ inputs.docker-access-token }}
