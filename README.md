@@ -11,7 +11,7 @@ Create secrets:
 To authenticate against Docker Hub it's strongly recommended to create a personal access token as an alternative to your password.
   - Go to Settings  >  Secrets, then create secrets for your credentials.
   - username
-  - password
+  - password (use access token)
 
 
 ## Usage
