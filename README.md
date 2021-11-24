@@ -8,7 +8,11 @@ This action makes it esasy to build and push your docker image to your repositor
 To perform this action, you'll need to provide the DockerHub credentials, for security, it is recommended to create secrets on your repository.
 
 Create secrets: 
+To authenticate against Docker Hub it's strongly recommended to create a personal access token as an alternative to your password.
   - Go to Settings  >  Secrets, then create secrets for your credentials.
+  - username
+  - password
+
 
 ## Usage
 
