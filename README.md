@@ -1,6 +1,6 @@
 # CI - Docker: Build and Push action <img src="https://img.shields.io/badge/Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white">
 
-This action makes it esasy to build and push, your docker image to your repository on DockerHub.
+This action makes it esasy to build and push your docker image to your repository on DockerHub.
 
 
 ## Set up 
