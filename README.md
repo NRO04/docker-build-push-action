@@ -14,6 +14,16 @@ To authenticate against Docker Hub it's strongly recommended to create a persona
   - password (use access token)
 
 
+| Inputs            |  Decription               | Required
+| -------------     |:------------------:       | :-------------:|
+| docker-username   | Usernae from dockerhub    | yes
+| docker-password   | Password from dockerhub   | yes
+| tag               | tag for repository        | yes
+| name-repository   | name for repository       | yes
+
+
+
+
 ## Usage
 
 ```yaml
