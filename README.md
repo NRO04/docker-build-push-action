@@ -1,4 +1,4 @@
-# docker-build-push-action <img style="border-radius: 1.2rem;" src="https://img.shields.io/badge/Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white">
+# docker-build-push-action <img src="https://img.shields.io/badge/Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white" style="border-radius: 1.2rem;">
 
 Action to build an push docker images to your repository on DockerHub
 
