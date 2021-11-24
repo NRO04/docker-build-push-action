@@ -33,5 +33,5 @@ jobs:
           name-repository: ${{ github.repository }} #repository name, specify what the repository will be called on dockerhub.
           tag: v1 #tag for repository
           docker-username: ${{ secrets.DOCKER_HUB_USERNAME }} # docker account - username
-          docker-password: ${{ secrets.DOCKER_HUB_PASSWORD }} # docker account - password
+          docker-access-token: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }} # docker account - password
 ```
