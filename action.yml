@@ -1,5 +1,5 @@
-
-name: "Docker build and push - RO"
+author: "RO"
+name: "CI - Docker: Build and Push action "
 description: "This action will help you to build your image and then push it"
 icon: "green"
 color: "play-circle"
