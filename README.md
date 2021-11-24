@@ -3,11 +3,11 @@
 This action makes it esasy to build and push, your docker image to your repository on DockerHub.
 
 
-##Set up 
+## Set up 
 
 To execute this action, you'll need to provide the DockerHub credentials, for security, it is recommended to create secrets on your repository.
 
-#Create secrets: 
+Create secrets: 
   - Go to Settings > Secrets, then creates secrets for your credentials.
 
 ## Usage
